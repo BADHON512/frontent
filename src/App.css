@@ -1,6 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
+ 
 }
 
 
@@ -14,4 +20,12 @@
   background-image: linear-gradient(black, rgb(201, 39, 39));
   text-align: center;
 padding: 20px;
+}
+
+html::-webkit-scrollbar{
+  display: none;
+}
+input::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
 }
